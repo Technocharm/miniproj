@@ -1,0 +1,55 @@
+ <nav id="top" style="background-color: #AA0914!important;" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="width:100% display:flex;">
+	 <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/sevices">Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>	
+		<a class="navbar-brand" href="#"><img style="width: 100px; height: 50px;" src="/image/massrec2.JPG" alt=""></a>
+	
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav" >
+			{{!-- <li class="nav-item active">
+			  <a style="font-size: 20px;  color:white;" class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+			</li> --}}
+			<li class="nav-item dropdown" >
+    			<a style="font-size: 20px;  color:white;" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Home</a>
+    			<div class="dropdown-menu" style="background-color: black;">
+      				<a class="dropdown-item" style="font-size: 16px;  color:white;" onMouseOver="this.style.backgroundColor='#AA0914'" onMouseOut="this.style.backgroundColor='black'" href="/home"><img style="width: 40px; height: 40px;" src="/image/clapperboard.png" alt=""> Movies</a>
+      				<a class="dropdown-item" style="font-size: 16px;  color:white;" onMouseOver="this.style.backgroundColor='#AA0914'" onMouseOut="this.style.backgroundColor='black'" href="/anime"><img style="width: 40px; height: 40px;" src="/image/clapperboard.png" alt="/anime"> Anime</a>
+      				<a class="dropdown-item" style="font-size: 16px;  color:white;" onMouseOver="this.style.backgroundColor='#AA0914'" onMouseOut="this.style.backgroundColor='black'" href="/series"><img style="width: 40px; height: 40px;" src="/image/clapperboard.png" alt=""> Series</a>
+					<a class="dropdown-item" style="font-size: 16px;  color:white;" onMouseOver="this.style.backgroundColor='#AA0914'" onMouseOut="this.style.backgroundColor='black'" href="/shortfilm"><img style="width: 40px; height: 40px;" src="/image/clapperboard.png" alt=""> Short Films</a>
+      				{{!-- <div class="dropdown-divider"></div> --}}
+    			</div>
+  			</li>
+			
+			<li class="nav-item">
+			  <a style="font-size: 20px;  color:white;" class="nav-link" href="/recommendator">Recommendator</a>
+			</li>
+			{{!-- <li class="nav-item">
+			  <a style="font-size: 20px;  color:white;" class="nav-link" href="/cust">Customized</a>
+			</li> --}}
+			<!-- <li class="nav-item">
+			  <a class="nav-link disabled">Disabled</a>
+			</li> -->
+		  </ul>
+		</div>
+		<div class="text-end">
+          		<button type="button" class="btn btn-outline-light me-2">Login</button>
+          		<button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+	  </nav>

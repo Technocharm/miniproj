@@ -1,0 +1,47 @@
+/* #main-footer{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+} */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+    
+}
+
+body{
+    text-align: center;
+}
+
+#mainmov-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    height: 5rem; 
+}
+#mainmov-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; 
+}
+#mainmov-footer .social .fab {
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+    padding: .5rem; 
+}
+#mainmov-footer .social .fab:hover {
+    background: #AA0914;
+}

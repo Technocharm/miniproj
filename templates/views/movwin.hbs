@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/allmovwin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Movie Recommender</title>
+    {{!-- <style>
+        body{
+            background-image: url("https://preview.redd.it/2jhtmqhg4mo81.png?width=1920&format=png&auto=webp&s=0d41709c3c478d2bcadfd8f2450271f175c0676f");
+            opacity: 0.7;
+        }
+        section{
+            z-index: 4;
+        }
+    </style> --}}
+</head>
+<body>
+    
+
+     <a class="btn btn-secondary" style="margin:10px;" href="/home">GoBack</a>
+     <div id="myNav" class="overlay">
+		<br>
+		
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+      <div class="watchbtn">
+        <button class="btn btn-warning float-right mr-5 watchlist" id="watchlistid" style="margin:7px;" onclick="watchList()">Add to WatchList</button>
+        <button class="btn btn-warning watched" id="watchedid" style="margin:7px; position:relative; left:75%" onclick="watched()">Watched</button>
+      </div>
+      
+      <div id="cardContainer" class="row" >
+			
+	  </div>
+      <h3 class="casthead">Movie Cast</h3>
+      <div class="carousel">
+        <div class="carouselbox" id="castcontent">
+
+        </div>
+        
+        
+        {{!-- <a class="switchLeft sliderButton" onclick="sliderScrollLeft()" ><</a>
+        <a class="switchRight sliderButton" onclick="sliderScrollRight()" >></a> --}}
+      </div>
+
+      
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+	
+    <script src="/js/allmovwin.js"></script>
+    {{!-- <div class="clear"></div> --}}
+	{{!-- <footer id="mainmov-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2022. All Rights Reserved</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+				<button onclick="topFunction()" id="myBtn" title="Go to top" style="color: white">🔝</button>
+            </div>
+        </div>
+    </footer> --}}
+</body>
+</html>
